@@ -8,7 +8,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "src", "index.html"),
         }),
-        new MiniCssExtractPlugin()
+        new MiniCssExtractPlugin(),
     ],
     output: {
         path: path.join(__dirname, "dist"),
@@ -41,7 +41,11 @@ module.exports = {
             },
         ],
     },
-    resolve: {},
+    resolve: {
+        alias: {
+            react: path.resolve("./node_modules/react"),
+        },
+    },
     optimization: {
         moduleIds: "deterministic",
         runtimeChunk: "single",
