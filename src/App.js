@@ -3,6 +3,7 @@ import React, {useEffect, useState} from "react";
 import {LayoutManager} from "ui-layout-manager";
 
 import VSCodeLayout from "./vsCodeLayout.json";
+import colRowLayout from "./colRowLayout.json";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
@@ -14,6 +15,6 @@ import "./App.scss";
  */
 export function App () {
     return (
-        <LayoutManager layout={VSCodeLayout}/>
+        <LayoutManager ldf={colRowLayout}/>
     );
 }

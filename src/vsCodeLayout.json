@@ -1,55 +1,39 @@
 {
-    "layout": [
-        {
-            "id": 1,
-            "type": "row",
-            "height": "75",
-            "childType":"column",
-            "children": [
-                {
-                    "id": 2,
-                    "type": "column",
-                    "width": 20,
-                    "childType":"row",
-                    "children": [
-                        {
-                            "id": 5,
-                            "type": "row",
-                            "height": 50,
-                            "childType":"none",
-                            "children": []
-                        },
-                        {
-                            "id": 6,
-                            "type": "row",
-                            "height": 50,
-                            "childType":"none",
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "id": 3,
-                    "type": "column",
-                    "width": 40,
-                    "childType":"none",
-                    "children": []
-                },
-                {
-                    "id": 4,
-                    "type": "column",
-                    "width": 40,
-                    "childType":"none",
-                    "children": []
-                }
-            ]
-        },
-        {
-            "id": 5,
-            "type": "row",
-            "height": "25",
-            "childType":"none",
-            "children": []
-        }
-    ]
+    "title": "VSCode Layout",
+    "layout": {
+        "id": 0,
+        "type": "root",
+        "childType":"row",
+        "children": [
+            {
+                "id": 1,
+                "type": "row",
+                "height": 75,
+                "childType":"column",
+                "children": [
+                    {
+                        "id": 5,
+                        "type": "column",
+                        "width": 20
+                    },
+                    {
+                        "id": 6,
+                        "type": "column",
+                        "width": 40
+                    },
+                    {
+                        "id": 7,
+                        "type": "column",
+                        "width": 40
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "type": "row",
+                "height": 25
+            }
+        ]
+       
+    }
 }
