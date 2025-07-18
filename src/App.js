@@ -1,9 +1,8 @@
-import React, {useEffect, useState} from "react";
+import React, {useMemo} from "react";
 
 import {LayoutManager} from "ui-layout-manager";
 
-import VSCodeLayout from "./vsCodeLayout.json";
-import colRowLayout from "./colRowLayout.json";
+import VariableTreev2 from "./VariableTreev2.json";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
@@ -14,7 +13,23 @@ import "./App.scss";
  * @return {JSX.Element}
  */
 export function App () {
+    const registry = useMemo(() => ({
+        EditorVSCode: () =>
+            import("./sample_components/editor/EditorVSCode").then((m) => ({
+                default: m.default || m.EditorVSCode,
+            })),
+        Stack: () =>
+            import("./sample_components/stack/Stack").then((m) => ({
+                default: m.default || m.Stack,
+            })),
+        Flow: () =>
+            import("./sample_components/flow/Flow").then((m) => ({
+                default: m.default || m.Flow,
+            })),
+    }), []);
+
+
     return (
-        <LayoutManager ldf={colRowLayout}/>
+        <LayoutManager registry={registry} ldf={VariableTreev2}/>
     );
 }

@@ -35,7 +35,8 @@
     "react-bootstrap-icons": "^1.11.3",
     "react-dom": "^18.2.0",
     "react-monaco-editor": "^0.50.1",
-    "react-router-dom": "^6.4.3"
+    "react-router-dom": "^6.4.3",
+    "sample-ui-component-library": "^0.0.0-beta"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
