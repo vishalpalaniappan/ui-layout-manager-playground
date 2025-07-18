@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","mappings":"AAAA,KACE,YACA,WAGF,KACE,YACA,WACA,SAGF,KACE,YACA,W","sources":["webpack://ui-layout-manager-playground/./src/App.scss"],"sourcesContent":["html {\n  height: 100%;\n  width: 100%;\n}\n\nbody {\n  height: 100%;\n  width: 100%;\n  margin: 0;\n}\n\n#app {\n  height: 100%;\n  width: 100%;\n}\n"],"names":[],"sourceRoot":""}
